@@ -1,0 +1,18 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+.link {
+    position: relative;
+    left: 70px;
+    color: #fff;
+    font-size: 20px;
+    margin: 30px;
+    text-decoration: none;
+}
+.logo {
+    color: white;
+    font-size: 40px;
+    margin: 16px;
+    margin-left: 70px;
+}
