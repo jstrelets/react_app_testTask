@@ -1,13 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {  NavLink } from 'react-router-dom';
 import './Navbar.css';
+import img from '../../img/UKAD_logo.png';
 
 const Navbar = () => {
     return (
-        <div className='navbar'>
-            <h1 className='logo'>UKAD</h1>
-            <Link className='link' to='/home'>Home</Link>
-            <Link className='link' to='/products'>Sports</Link>
+        <div style={{display: 'flex'}}>
+            <img className='logo' src={img} alt="logo"/>
+            <NavLink className='link' to='/home'>Home</NavLink>
+            <NavLink className='link' to='/products'>Sports</NavLink>
         </div>
     );
 };

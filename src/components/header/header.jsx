@@ -4,11 +4,9 @@ import './header.css';
 
 const Header = () => {
     return (
-        <>
-            <div className='header'>
-                <Navbar/>
-            </div>
-        </>
+        <div className='header'>
+            <Navbar/>
+        </div>
     );
 };
 

@@ -1,21 +1,22 @@
 import React, { useState, useEffect } from 'react';
-import Carousel from 'react-elastic-carousel';
+import Carousel from 'react-simply-carousel';
 import Loader from '../loader/Loader';
 import Error from '../error/Error';
 import './cardTable.css';
-
+import { MarginLeft } from './MarginLeft';
 
 const CardTable = (props) =>  {
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [items, setItems] = useState([]);
+    const [activeSlide, setActiveSlide] = useState(0);
 
     useEffect(() => {
         fetch('https://www.thesportsdb.com/api/v1/json/1/all_sports.php')
         .then(res => res.json())
         .then((result) => {
-                setIsLoaded(true);
                 setItems(result.sports);
+                setIsLoaded(true);
             },
             (error) => {
                 setIsLoaded(true);
@@ -32,16 +33,52 @@ const CardTable = (props) =>  {
         return <Loader/>
     } else {
         return (
-            <div style={{width: '60%', margin: '20px auto' }}>
-                <Carousel>
+            <div>
+                <Carousel
+                    updateOnItemClick
+                    activeSlideIndex={activeSlide}
+                    onRequestChange={setActiveSlide}
+                    forwardBtnProps={{
+                        children: ">",
+                        style: {
+                        position: "relative",
+                        // left: '17px',
+                        fontSize: '40px',
+                        width: 70,
+                        height: 70,
+                        minWidth: 70,
+                        alignSelf: "center",
+                        borderRadius: '100%'
+                        }
+                    }}
+                    backwardBtnProps={{
+                        children: "<",
+                        style: {
+                        position: "relative",
+                        // left: '65px',
+                        fontSize: '40px',
+                        width: 70,
+                        height: 70,
+                        minWidth: 70,
+                        alignSelf: "center",
+                        borderRadius: '100%',
+                        zIndex: 1
+                        }
+                    }}
+                    itemsToShow={3}
+                    speed={400}
+                    infinite={false}
+                >
                     {items.map(item => (
-                        <div key={item.idSport} className='card'>  
-                            <div className='card_list'>
-                                <img src={item.strSportThumb} className="card_img" alt="picture_1"></img>
-                                <div className='card_title'>{item.strSport}</div>
-                                <div className='card_item'>{item.strFormat} </div>
+                        <MarginLeft>
+                            <div key={item.idSport} className='card'>
+                                <img  src={item.strSportThumb} className="card_img" alt="picture_1"/>
+                                <div className='card_content'>
+                                    <div className='card_title'>{item.strSport}</div>
+                                    <div className='card_text'>{item.strFormat}</div>
+                                </div>
                             </div>
-                        </div>
+                        </MarginLeft>
                     ))}
                 </Carousel>
             </div>
@@ -50,3 +87,4 @@ const CardTable = (props) =>  {
 };
 
 export default CardTable;
+

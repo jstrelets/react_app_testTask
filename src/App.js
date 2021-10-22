@@ -7,12 +7,11 @@ import Error from "./components/error/Error";
 import Products from "./pages/Products";
 import Home from "./pages/Home";
 
-
 function App() {
 
   return (
-    <div className='page'>
-      <BrowserRouter>
+    <div key={'key_1'} className='page'>
+      <BrowserRouter >
         <Header/>  
         <Switch>
           <Route path='/home'>

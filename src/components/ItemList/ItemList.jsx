@@ -7,6 +7,8 @@ const ItemList = () =>  {
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [items, setItems] = useState([]);
+    const [start] = useState(0);
+    const [limit] = useState(8);
 
     useEffect(() => {
         fetch('https://www.thesportsdb.com/api/v1/json/1/all_sports.php')
@@ -22,6 +24,8 @@ const ItemList = () =>  {
         );
     }, []);
 
+    const sports = items.slice(start, limit);
+
     if(error) {
         return <Error/>
     } else if (!isLoaded) {
@@ -29,12 +33,12 @@ const ItemList = () =>  {
     } else {
         return (
             <div style={{display: 'flex', flexWrap: 'wrap' }}>
-                {items.map(item => (
-                    <div key={item.idSport} className='card'>
-                        <div className='card_list'>
-                            <img src={item.strSportThumb} className="card_img" alt="picture_1"></img>
+                {sports.map((item) => (
+                    <div key={item.idSport} className='card1'>
+                        <img src={item.strSportThumb} className="card_img" alt="picture_1"></img>
+                        <div className='card_content'>
                             <div className='card_title'>{item.strSport}</div>
-                            <div className='card_item'>{item.strFormat} </div>
+                            <div className='card_text'>{item.strFormat} </div>
                         </div>
                     </div>
                 ))}

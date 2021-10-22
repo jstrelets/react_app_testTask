@@ -1,32 +1,140 @@
-.card {
-    margin: 30px auto;
-    width: 300px;
-    height: 200px;
-    border: 3px solid #ccc;
-    border-radius: 5px;
-    background: rgb(255, 255, 255);
+.title {
+    position: absolute;
+    
+    left: 125px;
+    top: 230px;
+
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+
+    color: #000000;
 }
-.card_list {
+.title1 {
+    position: absolute;
+    width: 248px;
+    height: 54px;
+    left: 0px;
+    top: 0px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    
+    color: #000000;
+}
+
+.slider_wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    padding: 0px;
+
+    margin: 0 auto;
+
+    position: absolute;
+    width: 1331px;
+    height: 551px;
+    left: 125px;
+    top: 300px;
+}
+.card {
+    position: static;
+    width: 421px;
+    height: 450px;
+    left: 0px;
+    top: 0px;
+    
+    border: 3px solid #F2F2F2;
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 10px 17px;
+}
+.card1 {
+    position: static;
+    width: 350px;
+    height: 474px;
+    left: 0px;
+    top: 0px;
+    
+    background: #FFFFFF;
+    border: 3px solid #F2F2F2;
+    box-sizing: border-box;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-right: 30px;
+    margin-top: 40px;
 }
 .card_img {
     display: block;
-    padding-top: 15px;
+    margin: 30px auto;
     max-width: 100%;
-    height: auto;
-    margin: 0;
+    height: 230px;
+}
+.card_content {
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px; 
+    margin: 50px 20px;
+
+    position: static;
+    height: 84px;
 }
 .card_title {
-    color: #000;
-    font-size: 22px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 19px;
+
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+
+    color: #232323;
 }
-.card_item {
-    size: 18px;
-    padding: 10px;
+.card_text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 28px;
+
+    color: #232323;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 8px 0px;
 }
-.title {
-    text-align: center;
-    margin: 20px ;
+.product_container {
+    position: absolute;
+    width: 1520px;
+    height: 1058px;
+    left: 20px;
+    top: 118px;
 }
+.cards_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 1520px;
+    height: 988px;
+    left: 0px;
+    top: 70px;
+}
+
