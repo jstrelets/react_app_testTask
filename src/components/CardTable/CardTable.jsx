@@ -62,7 +62,7 @@ const CardTable = (props) =>  {
                         minWidth: 70,
                         alignSelf: "center",
                         borderRadius: '100%',
-                        zIndex: 1
+                        // zIndex: 1
                         }
                     }}
                     itemsToShow={3}

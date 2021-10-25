@@ -5,7 +5,7 @@ import '../components/CardTable/cardTable.css';
 const Home = () => {
     
     return (
-        <div style={{flex: '1 1 auto'}}>
+        <div className='product_container'>
             <h1 className='title'>
                 Home Page
             </h1>

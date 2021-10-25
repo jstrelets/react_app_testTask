@@ -1,8 +1,8 @@
 .title {
     position: absolute;
     
-    left: 125px;
-    top: 230px;
+    left: 210px;
+    top: 200px;
 
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -27,28 +27,25 @@
     
     color: #000000;
 }
-
 .slider_wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    padding: 0px;
-
-    margin: 0 auto;
-
+       
     position: absolute;
-    width: 1331px;
+    width: auto;
     height: 551px;
     left: 125px;
-    top: 300px;
+    top: 150px;
 }
 .card {
     position: static;
-    width: 421px;
-    height: 450px;
+    width: 340px;
+    height: 280px;
     left: 0px;
     top: 0px;
+
+    overflow: hidden;
     
     border: 3px solid #F2F2F2;
     
@@ -61,9 +58,11 @@
 .card1 {
     position: static;
     width: 350px;
-    height: 474px;
+    height: 300px;
     left: 0px;
     top: 0px;
+
+    overflow: hidden;
     
     background: #FFFFFF;
     border: 3px solid #F2F2F2;
@@ -77,16 +76,16 @@
 }
 .card_img {
     display: block;
-    margin: 30px auto;
-    max-width: 100%;
-    height: 230px;
+    margin:  0 auto;
+    max-width: auto;
+    height: 150px;
 }
 .card_content {
     display: flex; 
     flex-direction: column;
     align-items: flex-start;
     padding: 0px; 
-    margin: 50px 20px;
+    margin: 35px 20px;
 
     position: static;
     height: 84px;
@@ -119,22 +118,25 @@
     margin: 8px 0px;
 }
 .product_container {
+    flex: 1 1 auto;
+
+    margin: 0 auto;
+
     position: absolute;
     width: 1520px;
-    height: 1058px;
+    height: 100%;
     left: 20px;
-    top: 118px;
+    top: 110px;
 }
 .cards_wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
     padding: 0px;
 
     position: absolute;
-    width: 1520px;
-    height: 988px;
     left: 0px;
-    top: 70px;
+    top: 40px;
 }
 
