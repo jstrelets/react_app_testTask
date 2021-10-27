@@ -1,24 +1,25 @@
+.home_container {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .title {
-    position: absolute;
-    
-    left: 210px;
-    top: 200px;
+    position: relative;
+    left: -600px;
 
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
     line-height: 54px;
+    margin-left: 90px;
 
     color: #000000;
 }
-.title1 {
-    position: absolute;
-    width: 248px;
-    height: 54px;
-    left: 0px;
-    top: 0px;
-    
+.title_sport {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: bold;
@@ -28,23 +29,14 @@
     color: #000000;
 }
 .slider_wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-       
-    position: absolute;
-    width: auto;
-    height: 551px;
-    left: 125px;
-    top: 150px;
+   width: 100%;
+}
+.cards_wrapper {
+    width: 1520px;
 }
 .card {
-    position: static;
-    width: 340px;
-    height: 280px;
-    left: 0px;
-    top: 0px;
-
+    width: 421px;
+    height: 500px;
     overflow: hidden;
     
     border: 3px solid #F2F2F2;
@@ -55,12 +47,8 @@
     flex-grow: 0;
     margin: 10px 17px;
 }
-.card1 {
-    position: static;
+.card_sport {
     width: 350px;
-    height: 300px;
-    left: 0px;
-    top: 0px;
 
     overflow: hidden;
     
@@ -78,14 +66,21 @@
     display: block;
     margin:  0 auto;
     max-width: auto;
-    height: 150px;
+    height: 200px;
+}
+.card_img_sport {
+    display: block;
+    margin:  0 auto;
+    max-width: auto;
+    height: 170px;
 }
 .card_content {
     display: flex; 
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: flex-start ;
     padding: 0px; 
-    margin: 35px 20px;
+    margin: 65px 30px;
 
     position: static;
     height: 84px;
@@ -94,7 +89,7 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 13px;
+    font-size: 18px;
     line-height: 19px;
 
     letter-spacing: -0.03em;
@@ -106,7 +101,7 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: bold;
-    font-size: 19px;
+    font-size: 24px;
     line-height: 28px;
 
     color: #232323;
@@ -117,26 +112,5 @@
     flex-grow: 0;
     margin: 8px 0px;
 }
-.product_container {
-    flex: 1 1 auto;
 
-    margin: 0 auto;
-
-    position: absolute;
-    width: 1520px;
-    height: 100%;
-    left: 20px;
-    top: 110px;
-}
-.cards_wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0px;
-
-    position: absolute;
-    left: 0px;
-    top: 40px;
-}
 

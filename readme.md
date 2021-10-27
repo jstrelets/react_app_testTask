@@ -1,4 +1,4 @@
-#### Single Page Application made with React.
+####Single Page Application made with React.
 
 This app shows the implementation asynchronous data loading from open API 
 

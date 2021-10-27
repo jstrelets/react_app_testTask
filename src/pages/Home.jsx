@@ -5,7 +5,7 @@ import '../components/CardTable/cardTable.css';
 const Home = () => {
     
     return (
-        <div className='product_container'>
+        <div className='home_container'>
             <h1 className='title'>
                 Home Page
             </h1>

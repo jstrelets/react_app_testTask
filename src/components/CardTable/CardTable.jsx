@@ -42,7 +42,7 @@ const CardTable = (props) =>  {
                         children: ">",
                         style: {
                         position: "relative",
-                        // left: '17px',
+                        left: '-55px',
                         fontSize: '40px',
                         width: 70,
                         height: 70,
@@ -55,14 +55,14 @@ const CardTable = (props) =>  {
                         children: "<",
                         style: {
                         position: "relative",
-                        // left: '65px',
+                        left: '50px',
                         fontSize: '40px',
                         width: 70,
                         height: 70,
                         minWidth: 70,
                         alignSelf: "center",
                         borderRadius: '100%',
-                        // zIndex: 1
+                        zIndex: 1
                         }
                     }}
                     itemsToShow={3}

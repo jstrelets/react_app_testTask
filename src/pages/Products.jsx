@@ -3,13 +3,13 @@ import ItemList from '../components/ItemList/ItemList';
 
 const Products = () => {
     return (
-        <div className='product_container'>
-            <h1 className='title1'>
+        <div style={{flex: 1, marginTop: '40px'}}>
+            <h1 className='title_sport'>
                 Sports Page
             </h1> 
             <div className='cards_wrapper'>
                 <ItemList/>
-            </div>      
+            </div>             
         </div>
     );
 };

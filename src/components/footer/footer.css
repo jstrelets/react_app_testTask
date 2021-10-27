@@ -1,15 +1,10 @@
 .footer {
-    position: absolute;
     width: 1560px;
     height: 78px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 100%; 
     background: url('../../img/image 1.png');
 }
 .text_content {
-    position: absolute;
+    position: relative;
     width: 145px;
     height: 24px;
     left: 29px;

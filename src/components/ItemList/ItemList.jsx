@@ -34,8 +34,8 @@ const ItemList = () =>  {
         return (
             <div style={{display: 'flex', flexWrap: 'wrap' }}>
                 {sports.map((item) => (
-                    <div key={item.idSport} className='card1'>
-                        <img src={item.strSportThumb} className="card_img" alt="picture_1"></img>
+                    <div key={item.idSport} className='card_sport'>
+                        <img src={item.strSportThumb} className="card_img_sport" alt="picture_1"></img>
                         <div className='card_content'>
                             <div className='card_title'>{item.strSport}</div>
                             <div className='card_text'>{item.strFormat} </div>
