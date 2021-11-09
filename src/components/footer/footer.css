@@ -1,22 +1,16 @@
 .footer {
-    width: 1560px;
-    height: 78px;
+
+    min-width: 1560px;
+    min-height: 78px;
     background: url('../../img/image 1.png');
 }
 .text_content {
-    position: relative;
-    width: 145px;
-    height: 24px;
-    left: 29px;
-    top: calc(50% - 24px/2);
+    /* position: relative; */
 
     font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
-    line-height: 24px;
 
     text-transform: uppercase;
-
+    padding: 27px ;
     color: #FFFFFF;
 }

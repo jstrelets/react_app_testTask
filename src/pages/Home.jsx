@@ -5,13 +5,11 @@ import '../components/CardTable/cardTable.css';
 const Home = () => {
     
     return (
-        <div className='home_container'>
+        <div className='slider_block'>
             <h1 className='title'>
                 Home Page
             </h1>
-            <div className='slider_wrapper'>
-                <CardTable slides={8}/>
-            </div>
+            <CardTable slides={8}/>
         </div>
     );
 };

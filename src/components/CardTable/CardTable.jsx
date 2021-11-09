@@ -42,28 +42,37 @@ const CardTable = (props) =>  {
                         children: ">",
                         style: {
                         position: "relative",
-                        left: '-55px',
-                        fontSize: '40px',
-                        width: 70,
-                        height: 70,
-                        minWidth: 70,
-                        alignSelf: "center",
-                        borderRadius: '100%'
-                        }
-                    }}
-                    backwardBtnProps={{
-                        children: "<",
-                        style: {
-                        position: "relative",
-                        left: '50px',
+                        left: '-40px',
                         fontSize: '40px',
                         width: 70,
                         height: 70,
                         minWidth: 70,
                         alignSelf: "center",
                         borderRadius: '100%',
-                        zIndex: 1
+                        backgroundColor: 'white'
                         }
+                    }}
+                    backwardBtnProps={{
+                        children: "<",
+                        style: {
+                        position: "relative",
+                        left: '35px',
+                        fontSize: '40px',
+                        width: 70,
+                        height: 70,
+                        minWidth: 70,
+                        alignSelf: "center",
+                        borderRadius: '100%',
+                        zIndex: 1,
+                        backgroundColor: 'white'
+                        }
+                    }}
+                    innerProps={{
+                        // style: {
+                        // // maxWidth: "100% !important",
+                        // minWidth: '80%',
+                        // backgroundColor: 'blue'
+                        // }
                     }}
                     itemsToShow={3}
                     speed={400}

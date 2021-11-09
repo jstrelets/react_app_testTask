@@ -1,7 +1,14 @@
 .header {
 
-    width: 1560px;
-    height: 78px;
+    min-width: 1560px;
+    min-height: 78px;
     
     background: #022B32;
 }
+/* Media */
+
+/* @media (min-width: 1560px) {
+    .header {
+        min-width: 100%;
+    }
+} */

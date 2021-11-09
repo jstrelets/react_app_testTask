@@ -9,22 +9,18 @@ body {
     
 }
 .page {
+    min-width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     min-height: 100%;
 
     position: absolute;
 }
 
-/* Media */
-
-@media (min-width: 1560px) {
-    .page {
-        left: 0;
-        right: 0;
-    }
+.main {
+    flex: 1 1 auto;
 }
+
 
 
 
